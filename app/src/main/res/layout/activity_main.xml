@@ -4,14 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="foodshare.hainu.com.foofshare.MainActivity">
+    tools:context=".activity.MainActivity">
 
-    <TextView
-        android:text="Hello World!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--滑动图片-->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_main_picture"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#888">
+            </android.support.v4.view.ViewPager>
+
+            <!--节气显示-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="#999">
+
+            </LinearLayout>
+
+            <!--趣食、推荐-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#177">
+
+            </LinearLayout>
+
+            <!--热门话题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#777">
+
+            </LinearLayout>
+
+            <!--活动-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#900">
+
+            </LinearLayout>
+
+            <!--全名晒单-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#909">
+
+            </LinearLayout>
+
+            <!--出售-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#990">
+
+            </LinearLayout>
+
+            <!--美食-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#855">
+
+            </LinearLayout>
+
+            <!--菜谱-->
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+    </ScrollView>
 </RelativeLayout>
